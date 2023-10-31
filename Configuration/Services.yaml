@@ -1,0 +1,18 @@
+services:
+  _defaults:
+    autowire: true
+    autoconfigure: true
+    public: false
+
+  # Event listeners
+  Daoued\NewsExtended\EventListener\CreateConstraintsFromDemandEventListener:
+    tags:
+      - name: event.listener
+        identifier: 'theme.create_constraints_from_demand'
+        event: Daoued\NewsExtended\Event\CreateConstraintsFromDemandEvent
+
+  Daoued\NewsExtended\EventListener\CreateDemandFromSettingsEventListener:
+    tags:
+      - name: event.listener
+        identifier: 'theme.create_demand_from_settings'
+        event: Daoued\NewsExtended\Event\CreateDemandFromSettingsEvent

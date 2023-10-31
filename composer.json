@@ -1,0 +1,33 @@
+{
+    "name": "daoued/news-extended",
+    "type": "typo3-cms-extension",
+    "description": "TYPO3 extended news.",
+    "homepage": "https://www.haythemdaoud.net/",
+    "version": "1.0.0",
+    "license": [
+        "GPL-2.0-or-later"
+    ],
+    "keywords": [
+        "TYPO3 CMS",
+        "News extension"
+    ],
+    "authors": [
+        {
+            "name": "Haythem Daoud",
+            "role": "TYPO3 Developer"
+        }
+    ],
+    "require": {
+        "georgringer/news": "^11.2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Daoued\\NewsExtended\\": "Classes/"
+        }
+    },
+    "extra": {
+        "typo3/cms": {
+            "extension-key": "news_extended"
+        }
+    }
+}
