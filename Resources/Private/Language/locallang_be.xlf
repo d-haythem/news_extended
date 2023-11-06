@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+    <file source-language="en" datatype="plaintext" original="messages" date="2023-11-06T20:50:18Z" product-name="news_extended">
+        <header/>
+        <body>
+            <trans-unit id="plugin.news_list_and_filter.title" xml:space="preserve">
+				<source>List And Filter</source>
+			</trans-unit>
+			 <trans-unit id="plugin.news_list_and_filter.description" xml:space="preserve">
+                <source>Display of articles chosen by various optional properties like storage page, categories,... Plugin is capable of displaying a filter as well</source>
+            </trans-unit>
+
+             <trans-unit id="flexforms_tab.filter" xml:space="preserve">
+                <source>Filter</source>
+            </trans-unit>
+            <trans-unit id="flexforms_general.filterTitle" xml:space="preserve">
+                <source>Title</source>
+            </trans-unit>
+	    </body>
+	</file>
+</xliff>

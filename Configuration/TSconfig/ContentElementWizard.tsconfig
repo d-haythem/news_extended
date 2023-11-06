@@ -1,0 +1,12 @@
+mod.wizards.newContentElement.wizardItems.ext-news {
+    elements {
+        news_list_and_filter {
+            iconIdentifier = ext-news-plugin-news-list-and-filter
+            title = LLL:EXT:news_extended/Resources/Private/Language/locallang_be.xlf:plugin.news_list_and_filter.title
+            description = LLL:EXT:news_extended/Resources/Private/Language/locallang_be.xlf:plugin.news_list_and_filter.description
+            tt_content_defValues {
+                CType = news_newslistandfilter
+            }
+        }
+    }
+}

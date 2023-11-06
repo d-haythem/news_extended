@@ -5,6 +5,7 @@ namespace Daoued\NewsExtended\Controller;
 use Daoued\NewsExtended\Event\CreateDemandFromSettingsEvent;
 use GeorgRinger\News\Controller\NewsController as NewsBaseController;
 use GeorgRinger\News\Domain\Model\Dto\NewsDemand;
+use Psr\Http\Message\ResponseInterface;
 
 /**
  * Class NewsController
@@ -22,5 +23,16 @@ class NewsController extends NewsBaseController
         $event = new CreateDemandFromSettingsEvent($settings, $demand);
 
         return $this->eventDispatcher->dispatch($event)->getDemand();
+    }
+
+    public function listAndFilterAction(): ResponseInterface
+    {
+        // Implement Filter LOGIC
+
+
+        // Implement NEWS LIST LOGIC
+        parent::listAction();
+
+        return $this->htmlResponse();
     }
 }

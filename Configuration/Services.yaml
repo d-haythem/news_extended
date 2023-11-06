@@ -4,6 +4,9 @@ services:
     autoconfigure: true
     public: false
 
+  Daoued\NewsExtended\:
+    resource: '../Classes/'
+
   # Event listeners
   Daoued\NewsExtended\EventListener\CreateConstraintsFromDemandEventListener:
     tags:
